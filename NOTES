@@ -1,0 +1,7 @@
+=> JUNIT: unit testing framework
+->it is of two type: A)Black Box : 
+                     B)White Box
+
+
+=> ASSERTION
+1)assertEquals("acctual result", actual res);
