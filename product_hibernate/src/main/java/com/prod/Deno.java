@@ -1,5 +1,10 @@
 package com.prod;
 
-public class Deno {
+import 
 
+public class Deno {
+	public static void main(String args[]) {
+		EntityManager
+	}
 }
+

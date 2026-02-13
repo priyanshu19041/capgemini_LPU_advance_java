@@ -1,5 +1,54 @@
 package com.onetoonemapping;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
 public class Engine {
+	@Id
+	private int id;
+	private String type;
+	private String fuelType;
+	private String mileage;
+	private String cc;
+	
+	@OneToOne(mappedBy = "engine")
+	private Car car;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getFuelType() {
+		return fuelType;
+	}
+	public void setFuelType(String fuelType) {
+		this.fuelType = fuelType;
+	}
+	public String getMileage() {
+		return mileage;
+	}
+	public void setMileage(String mileage) {
+		this.mileage = mileage;
+	}
+	public String getCc() {
+		return cc;
+	}
+	public void setCc(String cc) {
+		this.cc = cc;
+	}
+	@Override
+	public String toString() {
+		return "Engine [id=" + id + ", type=" + type + ", fuelType=" + fuelType + ", mileage=" + mileage + ", cc=" + cc
+				+ "]";
+	}
 
 }
