@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.prac</groupId>
-  <artifactId>Assignment7_16Feb26</artifactId>
+  <artifactId>cache</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
 		<dependency>
@@ -24,6 +24,12 @@
 			<version>5.11.4</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    <groupId>net.sf.ehcache</groupId>
+    <artifactId>ehcache</artifactId>
+    <version>2.10.9.2</version>
+    <scope>compile</scope>
+</dependency>
 		<dependency>
 			<groupId>com.practice</groupId>
 			<artifactId>Product_hibernate</artifactId>
